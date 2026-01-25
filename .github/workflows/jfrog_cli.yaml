@@ -15,4 +15,5 @@ jobs:
         env:
           JF_URL: ${{ vars.JF_URL }}
           JF_ACCESS_TOKEN: ${{ env.ACCESS_TOKEN }}
-        run: jf rt upload "go.mod" g4/artifact-view-poc-$(date +%Y%m%d%H%M%S) --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module "access-oidc-demo"
+        run: |
+          jf rt upload "go.mod" g4/artifact-view-poc-$(date +%Y%m%d%H%M%S) --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module "access-oidc-demo"
