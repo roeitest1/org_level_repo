@@ -19,4 +19,4 @@ jobs:
         uses: actions/checkout@v2
       - name: deploy
         run: |
-          jf rt upload --server-id aview "go.mod" g4/artifact-view-poc-$(date +%Y%m%d%H%M%S) --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module "access-oidc-demo"
+          jf rt upload --server-id aview "go.mod" g4/go.mod --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module "access-oidc-demo"
