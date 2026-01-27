@@ -10,7 +10,7 @@ jobs:
     name: "artifact-view-poc"
     runs-on: self-hosted
     steps:
-      - name: Token Exchange
+      - name: Setup
         uses: jfrog/setup-jfrog-cli@v4
         with:
           version: 2.89.0
