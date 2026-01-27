@@ -14,7 +14,7 @@ jobs:
         uses: jfrog/setup-jfrog-cli@v4
         env:
           JF_URL: ${{ vars.JF_URL }}
-          JF_ACCESS_TOKEN: ${{ env.ACCESS_TOKEN }}
+          JF_ACCESS_TOKEN: ${{ env.ACCESS_TOKEN_2 }}
       - name: Checkout
         uses: actions/checkout@v2
       - name: deploy_artifact
