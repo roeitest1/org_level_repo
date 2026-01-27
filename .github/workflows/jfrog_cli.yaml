@@ -17,6 +17,6 @@ jobs:
           JF_ACCESS_TOKEN: ${{ env.ACCESS_TOKEN }}
       - name: Checkout
         uses: actions/checkout@v2
-      - name: deploy
+      - name: deploy_artifact
         run: |
           jf rt upload --server-id aview "pom.xml" mvn-1/pom.xml --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module "artifact-view-demo"
