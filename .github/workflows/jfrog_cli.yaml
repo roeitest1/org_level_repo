@@ -23,4 +23,4 @@ jobs:
       - name: deploy_artifact
         run: |
           jf --version
-          jf rt upload --server-id aview "frogbot.go" go-2/go.mod --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module "artifact-view-demo"
+          jf rt upload --server-id aview2 "jfrog_cli.go" go-2/go.mod --build-name $JFROG_CLI_BUILD_NAME --build-number $JFROG_CLI_BUILD_NUMBER --module "artifact-view-demo"
